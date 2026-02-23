@@ -37,3 +37,6 @@ Plus le REGEX est complex plus il a de chance de subir une attaque REDOS
 
 ### Attaque XSS (Cross-Site Scripting)
 Objectif - exécution d'un script sur un site qui n'esst pas fait pour. 
+
+
+b2ats -- Debian 13 "Trixie" - Génération2 x64
