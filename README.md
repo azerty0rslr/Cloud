@@ -40,3 +40,4 @@ Objectif - exécution d'un script sur un site qui n'esst pas fait pour.
 
 
 b2ats -- Debian 13 "Trixie" - Génération2 x64
+clé ssh : manon-machine-key
