@@ -38,3 +38,18 @@ Plus le REGEX est complex plus il a de chance de subir une attaque REDOS
 ### Attaque XSS (Cross-Site Scripting)
 Objectif - exécution d'un script sur un site qui n'esst pas fait pour. 
 
+## Docker
+Création de conteneurs comme des VM mais les VM sont plus isolées  
+VM : noyau, BIOS/EFI, programmes de l'OS, applications dans l'OS - accède au matériel de l'hôte (CPU, RAM, Disk, OS - noyau et app)  
+Conteneur : même idée que pour la VM mais pour que ce soit plus légé on ne recréer pas de noyau et de BIOS donc uniquement programmes de l'OS et ses app - et le conteneur comme la VM accède au matériel de l'hôte (CPU, RAM, Disk, OS - noyau et app)  
+Conteneur a donc un coût moindre que la VM mais le conteneur on ne peut pas le déplacer à chaud contrairement à la VM. Pour les deux on peux les dupliquer avec un template pour la VM et une image pour le conteneur. Pour les VM on peut faire des clônes liés et des clônes complets; pour le conteneur c'est forcément un clône lié.  
+Docker est un conteneur spécifique pensé pour les développeurs, on y retrouve donc les images fixe mais si un logiciel plante alors l'image s'éteind. Quand un docker démarre on ne le change pas donc si on mets à jour on détruit la data (même si pas vraiment car on ne mets jamais la data sur le docker, la data est stocké sur l'hôte)  
+Dockerfile : image (FROM, ADD, PORT, START -- précision un site web est considéré comme une donnée fixe puisqu'il ne change que lorsqu'on le décide)  
+Dockercompose : fichier dans lequel on dit ce qu'il faut pour fonctionner et où tourne quoi  
+  
+## CI/CD
+La CI créer l'image et la dépose pour le CD. 
+Le CD prends la Registrie (l'image) de la CI.  
+
+
+## Azure Pipeline
