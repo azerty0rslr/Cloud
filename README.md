@@ -49,3 +49,5 @@ Connection
 <img width="993" height="632" alt="image" src="https://github.com/user-attachments/assets/022469d5-ae24-4537-8b35-513dcd1200dd" />  
 Connection au SSH : ```ssh mrousseliere@20.199.8.96 -i Downloads\manon-machine-key.pem```  
 <img width="1382" height="249" alt="image" src="https://github.com/user-attachments/assets/59e5e63d-2e95-46a7-ac3a-ed9d81c91c85" />  
+Autoriser HTTP en port d'entrée  
+<img width="1815" height="728" alt="image" src="https://github.com/user-attachments/assets/c536cc40-313a-466b-b01b-f114fd9d011b" />
