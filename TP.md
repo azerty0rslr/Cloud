@@ -86,3 +86,14 @@ On retourne sur Azure DevOps pour créer un pipeline
 <img width="575" height="873" alt="image" src="https://github.com/user-attachments/assets/a6c47ca8-c5fd-49cf-a761-ec139deedbf8" />  
 Avec la configuration du cours nous ne pouvons pas poursuivre car pas assez de privilèges :  
 <img width="1823" height="628" alt="image" src="https://github.com/user-attachments/assets/32d6dbec-2b7a-46d1-bf65-1616d3f8c09b" />  
+  
+Commandes build docker :  
+```
+sudo docker build -t mrousseliereapp:v0.1 .
+sudo docker images --all
+sudo docker run -p 80:80 mrousseliereapp:v0.1
+```
+Pour lancer le docker ne pas oublier de remove Apache2  
+<img width="1474" height="571" alt="image" src="https://github.com/user-attachments/assets/c3c3bf3a-f0f2-4fce-b23d-5149a49699e8" />  
+<img width="1466" height="503" alt="image" src="https://github.com/user-attachments/assets/6f651740-fc64-46ad-8ae7-c65240226430" />  
+
