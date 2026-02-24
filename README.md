@@ -51,3 +51,5 @@ Connection au SSH : ```ssh mrousseliere@20.199.8.96 -i Downloads\manon-machine-k
 <img width="1382" height="249" alt="image" src="https://github.com/user-attachments/assets/59e5e63d-2e95-46a7-ac3a-ed9d81c91c85" />  
 Autoriser HTTP en port d'entrée  
 <img width="1815" height="728" alt="image" src="https://github.com/user-attachments/assets/c536cc40-313a-466b-b01b-f114fd9d011b" />
+En mettant l'IP privé dans la barre de recherche on a le résultat demandé  
+<img width="1819" height="924" alt="image" src="https://github.com/user-attachments/assets/cac50696-a73e-466e-a51a-a7e135c4e542" />  
