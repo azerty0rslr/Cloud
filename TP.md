@@ -99,3 +99,22 @@ Pour lancer le docker ne pas oublier de remove Apache2
   
 Pour débugger ```sudo docker exec -it 86497e07fc4e /bin/sh``` :  
 <img width="1257" height="626" alt="image" src="https://github.com/user-attachments/assets/eedaf8aa-68e6-4de3-8864-7c5f2d68e0c9" />  
+  
+Contenu du docker-compose.yaml : service web (avec le site web) + service data  
+```
+services:
+  web:
+    image: mrousseliereapp:v0.1
+    restart: always
+    ports:
+      - 80:80
+    depends_on:
+      - data
+
+  data:
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: password
+```  
+<img width="1459" height="552" alt="image" src="https://github.com/user-attachments/assets/5e99fd58-4fb0-4b43-ba58-6ef58b0ac936" />  
