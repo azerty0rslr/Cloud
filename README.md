@@ -50,10 +50,25 @@ Connection
 Connection au SSH : ```ssh mrousseliere@20.199.8.96 -i Downloads\manon-machine-key.pem```  
 <img width="1382" height="249" alt="image" src="https://github.com/user-attachments/assets/59e5e63d-2e95-46a7-ac3a-ed9d81c91c85" />  
 Autoriser HTTP en port d'entrée  
-<img width="1815" height="728" alt="image" src="https://github.com/user-attachments/assets/c536cc40-313a-466b-b01b-f114fd9d011b" />
+<img width="1815" height="728" alt="image" src="https://github.com/user-attachments/assets/c536cc40-313a-466b-b01b-f114fd9d011b" />  
 En mettant l'IP privé dans la barre de recherche on a le résultat demandé  
 <img width="1819" height="924" alt="image" src="https://github.com/user-attachments/assets/cac50696-a73e-466e-a51a-a7e135c4e542" />  
 ```
 sudo rm /var/www/html/index.html
 sudo cp index.php /var/www/html/
+```  
+Créer une organisation Azure DevOps  
+<img width="583" height="907" alt="image" src="https://github.com/user-attachments/assets/4b2dc4f8-0e3f-417c-a91f-995d7b2265d6" />  
+Créer le projet  
+<img width="1836" height="719" alt="image" src="https://github.com/user-attachments/assets/d3275d05-8814-41e2-886f-1a8610a82520" />  
+<img width="1833" height="725" alt="image" src="https://github.com/user-attachments/assets/1d49e815-d5c6-47cc-95ac-14a434555498" />  
+Upload sur Git puis récupérer les infos du dépot local  
+<img width="1746" height="734" alt="image" src="https://github.com/user-attachments/assets/6f0f3f55-2df6-4067-9825-84cdb747eeef" />  
 ```
+git remote add origin git@ssh.dev.azure.com:v3/TPAzureMRO/websiteMRO/websiteMRO
+git push -u origin --all
+```  
+On génère une clé SSH qu'on ajoute à Azure DevOps  
+<img width="571" height="871" alt="image" src="https://github.com/user-attachments/assets/1d43088a-ff1d-4f87-b6b9-b83cd726ad18" />  
+On upload tout sur Azure  
+<img width="1841" height="848" alt="image" src="https://github.com/user-attachments/assets/4d23cb43-7d9c-4876-b26c-7bedc32590ef" />  
