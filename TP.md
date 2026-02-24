@@ -96,4 +96,6 @@ sudo docker run -p 80:80 mrousseliereapp:v0.1
 Pour lancer le docker ne pas oublier de remove Apache2  
 <img width="1474" height="571" alt="image" src="https://github.com/user-attachments/assets/c3c3bf3a-f0f2-4fce-b23d-5149a49699e8" />  
 <img width="1466" height="503" alt="image" src="https://github.com/user-attachments/assets/6f651740-fc64-46ad-8ae7-c65240226430" />  
-
+  
+Pour débugger ```sudo docker exec -it 86497e07fc4e /bin/sh``` :  
+<img width="1257" height="626" alt="image" src="https://github.com/user-attachments/assets/eedaf8aa-68e6-4de3-8864-7c5f2d68e0c9" />  
