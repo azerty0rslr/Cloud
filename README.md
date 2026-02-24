@@ -39,10 +39,13 @@ Plus le REGEX est complex plus il a de chance de subir une attaque REDOS
 Objectif - exécution d'un script sur un site qui n'esst pas fait pour. 
 
 
-b2ats -- Debian 13 "Trixie" - Génération2 x64
-clé ssh : manon-machine-key
+b2ats -- Debian 13 "Trixie" - Génération2 x64  
+clé ssh : manon-machine-key  
 <img width="1826" height="825" alt="image" src="https://github.com/user-attachments/assets/ab7b8946-62b1-41e8-b695-84e007e6ac32" />  
 Bien éteindre la VM pour ne pas surconsommer  
-<img width="1826" height="762" alt="image" src="https://github.com/user-attachments/assets/18299a2d-a6c9-4a05-814d-9e971eba6ce3" />
+<img width="1826" height="762" alt="image" src="https://github.com/user-attachments/assets/18299a2d-a6c9-4a05-814d-9e971eba6ce3" />  
+  
 Connection  
 <img width="993" height="632" alt="image" src="https://github.com/user-attachments/assets/022469d5-ae24-4537-8b35-513dcd1200dd" />  
+Connection au SSH : ```ssh mrousseliere@20.199.8.96 -i Downloads\manon-machine-key.pem```  
+<img width="1382" height="249" alt="image" src="https://github.com/user-attachments/assets/59e5e63d-2e95-46a7-ac3a-ed9d81c91c85" />  
