@@ -53,3 +53,7 @@ Autoriser HTTP en port d'entrée
 <img width="1815" height="728" alt="image" src="https://github.com/user-attachments/assets/c536cc40-313a-466b-b01b-f114fd9d011b" />
 En mettant l'IP privé dans la barre de recherche on a le résultat demandé  
 <img width="1819" height="924" alt="image" src="https://github.com/user-attachments/assets/cac50696-a73e-466e-a51a-a7e135c4e542" />  
+```
+sudo rm /var/www/html/index.html
+sudo cp index.php /var/www/html/
+```
