@@ -79,3 +79,10 @@ EXPOSE 80
 ```
 
 ## Azure Pipeline
+Sur Azure on créer un registre de conteneurs  
+<img width="970" height="917" alt="image" src="https://github.com/user-attachments/assets/1c16d5aa-c31c-48b3-92e1-1aeb90680eb9" />  
+On retourne sur Azure DevOps pour créer un pipeline  
+<img width="1842" height="762" alt="image" src="https://github.com/user-attachments/assets/dbfe5e61-4d99-4b37-bfe4-b240fe604940" />  
+<img width="575" height="873" alt="image" src="https://github.com/user-attachments/assets/a6c47ca8-c5fd-49cf-a761-ec139deedbf8" />  
+Avec la configuration du cours nous ne pouvons pas poursuivre car pas assez de privilèges :  
+<img width="1823" height="628" alt="image" src="https://github.com/user-attachments/assets/32d6dbec-2b7a-46d1-bf65-1616d3f8c09b" />  
