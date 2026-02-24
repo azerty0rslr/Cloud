@@ -52,4 +52,4 @@ La CI créer l'image et la dépose pour le CD.
 Le CD prends la Registrie (l'image) de la CI.  
 
 
-## Azure Pipeline
+
