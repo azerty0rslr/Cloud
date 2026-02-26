@@ -179,7 +179,7 @@ Grâce au docker-compose et à l'index.php modifiés le site est lié à la BDD 
 // arrête l'image en cours
 sudo docker compose down -v
 sudo docker compose up -d
-// lancer le site, il ne fera pas le lien avec la BDD donc ensuite faire 
+// lancer le site, s'il ne fait pas le lien avec la BDD faire 
 sudo docker compose logs -f
 ```  
 <img width="691" height="235" alt="image" src="https://github.com/user-attachments/assets/761561b3-a0a7-4c44-bb1d-6cd9026fbaec" />  
