@@ -176,3 +176,14 @@ sudo docker compose up -d
 sudo docker compose logs -f
 ```
 
+## Docker Hub
+Pour que le monde puisse avoir accès à nos images, on va déployer l'image sur un tree via Docker Hub  
+```
+// on se connecte
+ sudo docker login
+// on donne un tag
+sudo docker tag mrousseliereapp:v0.2 azerty0rslr/docker-mrousseliere-b2-cloud:v0.2
+// on pousse ce tag sur Docker Hub
+sudo docker push azerty0rslr/docker-mrousseliere-b2-cloud:v0.2
+// 
+```  
