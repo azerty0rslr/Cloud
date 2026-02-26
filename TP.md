@@ -121,3 +121,58 @@ services:
 <img width="1459" height="552" alt="image" src="https://github.com/user-attachments/assets/5e99fd58-4fb0-4b43-ba58-6ef58b0ac936" />  
   
 On modifie docker-compose.yaml et index.php de la sorte :  
+```docker-compose.yaml```  
+```
+services:
+  web:
+    image: mrousseliereapp:v0.2
+    restart: always
+    ports:
+      - 80:80
+    depends_on:
+      - data
+
+  data:
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_DATABASE: Cloud-MR
+      MARIADB_USER: mrousseliere
+      MARIADB_PASSWORD: password
+      MARIADB_ROOT_PASSWORD: password
+```  
+  
+```index.php```  
+```
+La connexion est ?
+<?php
+// Configuration de la connexion à la base de données
+$servername = "data";
+$username = "mrousseliere";
+$password = "password";
+$dbname = "Cloud-MR";
+
+// Création de la connexion avec MySQLi en mode orienté objet
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Vérification de la connexion
+if ($conn->connect_error) {
+        // En cas d'erreur, afficher un message et arrêter l'exécution
+        die("Échec de la connexion : ". $conn->connect_error);
+        echo("Echec!");
+} else {
+// En cas de succès, afficher un message de confirmation
+        echo "Connexion réussie à la base de données MySQL !";
+}
+// Fermeture de la connexion
+$conn->close();
+?>
+```  
+  
+Grâce au docker-compose et à l'index.php modifiés le site est lié à la BDD :  
+```
+sudo docker compose down -v
+sudo docker compose up -d
+sudo docker compose logs -f
+```
+
