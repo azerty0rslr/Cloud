@@ -93,6 +93,9 @@ Commandes build docker :
 sudo docker build -t mrousseliereapp:v0.1 .
 sudo docker images --all
 sudo docker run -p 80:80 mrousseliereapp:v0.1
+
+// Pour supprimer une image
+sudo docker image rm nom_de_image
 ```
 Pour lancer le docker ne pas oublier de remove Apache2  
 <img width="1474" height="571" alt="image" src="https://github.com/user-attachments/assets/c3c3bf3a-f0f2-4fce-b23d-5149a49699e8" />  
