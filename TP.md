@@ -35,6 +35,11 @@ Upload sur Git puis récupérer les infos du dépot local
 ```
 git remote add origin git@ssh.dev.azure.com:v3/TPAzureMRO/websiteMRO/websiteMRO
 git push -u origin --all
+
+// rappel commmandes git
+git add .
+git commit -m "nom commit"
+git push -u origin --all
 ```  
 On génère une clé SSH qu'on ajoute à Azure DevOps  
 <img width="571" height="871" alt="image" src="https://github.com/user-attachments/assets/1d43088a-ff1d-4f87-b6b9-b83cd726ad18" />  
@@ -260,4 +265,8 @@ services:
 ```  
 
 Et on a également créé un fichier .env à la racine contenant tout les mots de passe.  
-
+## BDD
+Créer une BDD azure, faire se connecter, retourner dans la vm et faire mysql -h mrousseliereb22026.mysql.database.azure.com -u mrousseliere -p
+puis create database, use database et show database.  
+<img width="1468" height="623" alt="image" src="https://github.com/user-attachments/assets/1210b834-3feb-4fcf-b028-cdced11d8ebd" />
+YZK3e4MPzFVGS2E
