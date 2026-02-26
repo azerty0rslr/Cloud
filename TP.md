@@ -120,3 +120,4 @@ services:
 ```  
 <img width="1459" height="552" alt="image" src="https://github.com/user-attachments/assets/5e99fd58-4fb0-4b43-ba58-6ef58b0ac936" />  
   
+On modifie docker-compose.yaml et index.php de la sorte :  
