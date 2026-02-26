@@ -22,8 +22,9 @@ En mettant l'IP privé dans la barre de recherche on a le résultat demandé
 sudo rm /var/www/html/index.html
 sudo cp index.php /var/www/html/
 ```
-  
-## Azure DevOps
+
+## Azure
+### Azure DevOps
 Créer une organisation Azure DevOps  
 <img width="583" height="907" alt="image" src="https://github.com/user-attachments/assets/4b2dc4f8-0e3f-417c-a91f-995d7b2265d6" />  
 Créer le projet  
@@ -78,7 +79,7 @@ COPY ./src /var/www/html/
 EXPOSE 80
 ```
 
-## Azure Pipeline
+### Azure Pipeline
 Sur Azure on créer un registre de conteneurs  
 <img width="970" height="917" alt="image" src="https://github.com/user-attachments/assets/1c16d5aa-c31c-48b3-92e1-1aeb90680eb9" />  
 On retourne sur Azure DevOps pour créer un pipeline  
@@ -185,7 +186,7 @@ sudo docker compose logs -f
 <img width="691" height="235" alt="image" src="https://github.com/user-attachments/assets/761561b3-a0a7-4c44-bb1d-6cd9026fbaec" />  
 
 
-## Docker Hub
+### Docker Hub
 Pour que le monde puisse avoir accès à nos images, on va déployer l'image sur un tree via Docker Hub  
 ```
 // on se connecte
@@ -195,3 +196,68 @@ sudo docker tag mrousseliereapp:v0.2 azerty0rslr/docker-mrousseliere-b2-cloud:v0
 // on pousse ce tag sur Docker Hub
 sudo docker push azerty0rslr/docker-mrousseliere-b2-cloud:v0.2
 ```  
+
+### Staging build
+Attaque possible : compromission par dépôt de source  
+Pour les langages compilés on doit modifier le Dockerfile puisqu'il faut copier une image/plusieurs images (qui sera/seront détruite(s)) et créer une nouvelle image où l'on mets tout dans le même docker.  
+
+### Sécurisation
+Pour cacher des données privées, on créer un .env qui sera dans le gitignore avec les données privées 
+Tout d'abord on modifie ```index.php``` et ```docker-compose.yaml```  
+```index.php```  
+```
+nouveauté 2026 ?
+<?php
+// Configuration de la connexion à la base de données
+$servername = getenv('DATABASEURL');
+$username = getenv('DATABASEUSER');
+$password = getenv('DATABASEUSERPASSWORD');
+$dbname = getenv('DATABASE');
+
+// Création de la connexion avec MySQLi en mode orienté objet
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Vérification de la connexion
+if ($conn->connect_error) {
+        // En cas d'erreur, afficher un message et arrêter l'exécution
+        die("Échec de la connexion : ". $conn->connect_error);
+        echo("Echec!");
+} else {
+// En cas de succès, afficher un message de confirmation
+        echo "Connexion réussie à la base de données MySQL !";
+}
+// Fermeture de la connexion
+$conn->close();
+?>
+```  
+  
+```docker-compose.yaml```  
+```
+services:
+  web:
+    build: .
+    restart: always
+    ports:
+      - 80:80
+    depends_on:
+      - data
+    volumes:
+      - ./src:/var/www/html/
+    environment:
+      DATABASEURL: ${DATABASEURL}
+      DATABASEUSER: ${DATABASEUSER}
+      DATABASEUSERPASSWORD: ${DATABASEUSERPASSWORD}
+      DATABASE: ${DATABASE}
+
+  data:
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_DATABASE: ${DATABASE}
+      MARIADB_USER: ${DATABASEUSER}
+      MARIADB_PASSWORD: ${DATABASEUSERPASSWORD}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
+```  
+
+Et on a également créé un fichier .env à la racine contenant tout les mots de passe.  
+
