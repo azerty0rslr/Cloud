@@ -173,6 +173,7 @@ $conn->close();
   
 Grâce au docker-compose et à l'index.php modifiés le site est lié à la BDD :  
 ```
+// arrête l'image en cours
 sudo docker compose down -v
 sudo docker compose up -d
 sudo docker compose logs -f
