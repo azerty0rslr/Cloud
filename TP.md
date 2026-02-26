@@ -86,7 +86,8 @@ On retourne sur Azure DevOps pour créer un pipeline
 <img width="575" height="873" alt="image" src="https://github.com/user-attachments/assets/a6c47ca8-c5fd-49cf-a761-ec139deedbf8" />  
 Avec la configuration du cours nous ne pouvons pas poursuivre car pas assez de privilèges :  
 <img width="1823" height="628" alt="image" src="https://github.com/user-attachments/assets/32d6dbec-2b7a-46d1-bf65-1616d3f8c09b" />  
-  
+
+## Docker
 Commandes build docker :  
 ```
 sudo docker build -t mrousseliereapp:v0.1 .
