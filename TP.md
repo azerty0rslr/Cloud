@@ -119,7 +119,9 @@ services:
       MARIADB_ROOT_PASSWORD: password
 ```  
 <img width="1459" height="552" alt="image" src="https://github.com/user-attachments/assets/5e99fd58-4fb0-4b43-ba58-6ef58b0ac936" />  
-  
+
+# Jour 3
+## Docker (suite)
 On modifie docker-compose.yaml et index.php de la sorte :  
 ```docker-compose.yaml```  
 ```
@@ -174,7 +176,9 @@ Grâce au docker-compose et à l'index.php modifiés le site est lié à la BDD 
 sudo docker compose down -v
 sudo docker compose up -d
 sudo docker compose logs -f
-```
+```  
+<img width="691" height="235" alt="image" src="https://github.com/user-attachments/assets/761561b3-a0a7-4c44-bb1d-6cd9026fbaec" />  
+
 
 ## Docker Hub
 Pour que le monde puisse avoir accès à nos images, on va déployer l'image sur un tree via Docker Hub  
@@ -185,5 +189,4 @@ Pour que le monde puisse avoir accès à nos images, on va déployer l'image sur
 sudo docker tag mrousseliereapp:v0.2 azerty0rslr/docker-mrousseliere-b2-cloud:v0.2
 // on pousse ce tag sur Docker Hub
 sudo docker push azerty0rslr/docker-mrousseliere-b2-cloud:v0.2
-// 
 ```  
