@@ -1,3 +1,5 @@
+Pour les détails de toute l'avancé du TP : https://github.com/azerty0rslr/Cloud/blob/main/TP.md  
+
 ## Créé une ressource  
 <img width="1073" height="773" alt="image" src="https://github.com/user-attachments/assets/cf7ccf30-086c-4d81-93a9-9a5f95bd5267" />  
   
