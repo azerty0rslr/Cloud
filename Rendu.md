@@ -37,8 +37,8 @@ Le projet a été initialisé en suivant la doc et le cours.
 ## Pousser votre code dans le dépot  
 ```
 git init
-git config --global user.email "youenn@mail.com"
-git config --global user.name "YDU"
+git config --global user.email "manon@mail.com"
+git config --global user.name "azerty0rslr"
 git add .
 git commit -m "first commit"
 git remote add origin git@ssh.dev.azure.com:v3/TPAzureMRO/websiteMRO/websiteMRO
