@@ -275,7 +275,7 @@ YZK3e4MPzFVGS2E
 # Jour 4
 ## Pipeline
 On installe donc Azure Pipeline, pour cela on configure Docker conformement au contenu du TP  
-Ensuite on installe une clé PAC via Azure DevOps ()  
+Ensuite on installe une clé PAC via Azure DevOps  
 <img width="811" height="599" alt="image" src="https://github.com/user-attachments/assets/0e6d347d-e961-45e9-9e74-51ee8bce7472" />  
 Ensuite on configure les agents en ajoutant une pool d'agent  
 <img width="1814" height="897" alt="image" src="https://github.com/user-attachments/assets/597e21f4-c721-4f5b-a4b4-4c84a89f5050" />  
