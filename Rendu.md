@@ -1,26 +1,34 @@
-## Se connecter au compte azure
-## Créé une ressource
+## Se connecter au compte azure  
+## Créé une ressource  
 <img width="1826" height="825" alt="image" src="https://github.com/user-attachments/assets/ab7b8946-62b1-41e8-b695-84e007e6ac32" />  
-## Créé une VM
+
+## Créé une VM  
 <img width="1826" height="762" alt="image" src="https://github.com/user-attachments/assets/18299a2d-a6c9-4a05-814d-9e971eba6ce3" />  
-## Se connecter en SSH
+
+## Se connecter en SSH  
 <img width="993" height="632" alt="image" src="https://github.com/user-attachments/assets/022469d5-ae24-4537-8b35-513dcd1200dd" />  
 Connection au SSH : ```ssh mrousseliere@20.199.8.96 -i Downloads\manon-machine-key.pem```  
 <img width="1382" height="249" alt="image" src="https://github.com/user-attachments/assets/59e5e63d-2e95-46a7-ac3a-ed9d81c91c85" />  
-## Installer GIT sur la VM
-## Installer apache2 php php-mysql default-mysql-client
-## Verifier et ajouter le port http sur votre VM
+
+## Installer GIT sur la VM  
+
+## Installer apache2 php php-mysql default-mysql-client  
+
+## Verifier et ajouter le port http sur votre VM  
 Autoriser HTTP en port d'entrée  
 <img width="1815" height="728" alt="image" src="https://github.com/user-attachments/assets/c536cc40-313a-466b-b01b-f114fd9d011b" />  
-## Se connecter sur azure devops
+
+## Se connecter sur azure devops  
 Créer une organisation Azure DevOps  
 <img width="583" height="907" alt="image" src="https://github.com/user-attachments/assets/4b2dc4f8-0e3f-417c-a91f-995d7b2265d6" />  
-## Créer un projet
-<img width="1836" height="719" alt="image" src="https://github.com/user-attachments/assets/d3275d05-8814-41e2-886f-1a8610a82520" />  
-<img width="1833" height="725" alt="image" src="https://github.com/user-attachments/assets/1d49e815-d5c6-47cc-95ac-14a434555498" /> 
-## Initialiser le projet
 
-## Pousser votre code dans le dépot
+## Créer un projet  
+<img width="1836" height="719" alt="image" src="https://github.com/user-attachments/assets/d3275d05-8814-41e2-886f-1a8610a82520" />  
+<img width="1833" height="725" alt="image" src="https://github.com/user-attachments/assets/1d49e815-d5c6-47cc-95ac-14a434555498" />  
+
+## Initialiser le projet  
+  
+## Pousser votre code dans le dépot  
 ```
 git init
 git config --global user.email "youenn@mail.com"
@@ -29,23 +37,37 @@ git add .
 git commit -m "first commit"
 git remote add origin git@ssh.dev.azure.com:v3/TPAzureMRO/websiteMRO/websiteMRO
 git push -u origin --all
-```
-(Capture d'écran datant du moment auquel j'ai fais cette partie donc avant docker-compose etc)
+```  
+(Capture d'écran datant du moment auquel j'ai fais cette partie donc avant docker-compose etc)  
 <img width="1841" height="848" alt="image" src="https://github.com/user-attachments/assets/4d23cb43-7d9c-4876-b26c-7bedc32590ef" />  
-## Remplir le docker file
-## Pousser le docker file
-## Creer une container registries
-## Créé une pipeline
-## Configurer une pipeline
-## Build une image docker
-## Débuggé une image Docker
-## Créer un docker compose (votre image + un bdd)
-## Le site web est en ligne, avec acces a la DB, le tout avec Docker
-## Utiliser des volumes
-## Utiliser des variables d'environnement
-## Configurer un runner
-## Faire fonctionner la pipeline avec hebergement sur docker hub
-## Héberger le conteneur sur Azure en production
+  
+## Remplir le docker file  
+
+## Pousser le docker file  
+
+## Creer une container registries  
+
+## Créé une pipeline  
+
+## Configurer une pipeline  
+
+## Build une image docker  
+
+## Débuggé une image Docker  
+
+## Créer un docker compose (votre image + un bdd)  
+
+## Le site web est en ligne, avec acces a la DB, le tout avec Docker  
+
+## Utiliser des volumes  
+
+## Utiliser des variables d'environnement  
+
+## Configurer un runner  
+
+## Faire fonctionner la pipeline avec hebergement sur docker hub  
+
+## Héberger le conteneur sur Azure en production  
 
 
 
