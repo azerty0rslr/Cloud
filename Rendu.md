@@ -1,7 +1,8 @@
 ## Créé une ressource  
-<img width="1826" height="825" alt="image" src="https://github.com/user-attachments/assets/ab7b8946-62b1-41e8-b695-84e007e6ac32" />  
+<img width="1073" height="773" alt="image" src="https://github.com/user-attachments/assets/cf7ccf30-086c-4d81-93a9-9a5f95bd5267" />  
   
 ## Créé une VM  
+<img width="1826" height="825" alt="image" src="https://github.com/user-attachments/assets/ab7b8946-62b1-41e8-b695-84e007e6ac32" />  
 <img width="1826" height="762" alt="image" src="https://github.com/user-attachments/assets/18299a2d-a6c9-4a05-814d-9e971eba6ce3" />  
   
 ## Se connecter en SSH  
