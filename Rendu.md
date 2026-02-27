@@ -244,7 +244,3 @@ Puis on lance l'agent ./run.sh
 ## Faire fonctionner la pipeline avec hebergement sur docker hub  
 
 ## Héberger le conteneur sur Azure en production  
-
-
-<img width="1454" height="694" alt="image" src="https://github.com/user-attachments/assets/26bcfd9a-b5b8-424a-a731-e2471af9cfa6" />  
-
