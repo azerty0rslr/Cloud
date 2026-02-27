@@ -270,8 +270,7 @@ Et on a également créé un fichier .env à la racine contenant tout les mots d
 Créer une BDD azure, faire se connecter, retourner dans la vm et faire ```mysql -h mrousseliereb22026.mysql.database.azure.com -u mrousseliere -p```  
 Puis create database, use database et show database.  
 <img width="1468" height="623" alt="image" src="https://github.com/user-attachments/assets/1210b834-3feb-4fcf-b028-cdced11d8ebd" />  
-YZK3e4MPzFVGS2E  
-
+  
 # Jour 4
 ## Pipeline
 On installe donc Azure Pipeline, pour cela on configure Docker conformement au contenu du TP  
