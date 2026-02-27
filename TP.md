@@ -265,8 +265,26 @@ services:
 ```  
 
 Et on a également créé un fichier .env à la racine contenant tout les mots de passe.  
+
 ## BDD
-Créer une BDD azure, faire se connecter, retourner dans la vm et faire mysql -h mrousseliereb22026.mysql.database.azure.com -u mrousseliere -p
-puis create database, use database et show database.  
-<img width="1468" height="623" alt="image" src="https://github.com/user-attachments/assets/1210b834-3feb-4fcf-b028-cdced11d8ebd" />
-YZK3e4MPzFVGS2E
+Créer une BDD azure, faire se connecter, retourner dans la vm et faire ```mysql -h mrousseliereb22026.mysql.database.azure.com -u mrousseliere -p```  
+Puis create database, use database et show database.  
+<img width="1468" height="623" alt="image" src="https://github.com/user-attachments/assets/1210b834-3feb-4fcf-b028-cdced11d8ebd" />  
+YZK3e4MPzFVGS2E  
+
+# Jour 4
+## Pipeline
+On installe donc Azure Pipeline, pour cela on configure Docker conformement au contenu du TP  
+Ensuite on installe une clé PAC via Azure DevOps ()  
+<img width="811" height="599" alt="image" src="https://github.com/user-attachments/assets/0e6d347d-e961-45e9-9e74-51ee8bce7472" />  
+Ensuite on configure les agents en ajoutant une pool d'agent  
+<img width="1814" height="897" alt="image" src="https://github.com/user-attachments/assets/597e21f4-c721-4f5b-a4b4-4c84a89f5050" />  
+On clic sur la pool qu'on vient de créer et on fait New agent  
+<img width="1042" height="912" alt="image" src="https://github.com/user-attachments/assets/2b8e9c57-86b6-43b1-a560-ddc949508b58" />  
+Ensuite on créer un dossier en dehors du projet pour gérer les agents  
+<img width="1462" height="599" alt="image" src="https://github.com/user-attachments/assets/41a102f4-64c4-4925-a723-3d2bc806c8ed" />  
+Après une erreur assez longue à résoudre, j'arrive enfin à lancer config.sh. L'erreur était dû à un fichier docker.list incorrecte.  
+<img width="1446" height="688" alt="image" src="https://github.com/user-attachments/assets/4b8ab1bb-9e3d-4da9-a56e-a5e3eabd6d3f" />  
+<img width="1454" height="694" alt="image" src="https://github.com/user-attachments/assets/26bcfd9a-b5b8-424a-a731-e2471af9cfa6" />  
+Puis on lance l'agent ./run.sh  
+<img width="1755" height="788" alt="image" src="https://github.com/user-attachments/assets/f5ef8fee-eef2-4f7a-9ddc-39942215617a" />  
