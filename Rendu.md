@@ -7,7 +7,7 @@
   
 ## Se connecter en SSH  
 <img width="993" height="632" alt="image" src="https://github.com/user-attachments/assets/022469d5-ae24-4537-8b35-513dcd1200dd" />  
-Connection au SSH : ```ssh mrousseliere@20.199.8.96 -i Downloads\manon-machine-key.pem```  
+Connection au SSH ```ssh mrousseliere@20.199.8.96 -i Downloads\manon-machine-key.pem```  
 <img width="1382" height="249" alt="image" src="https://github.com/user-attachments/assets/59e5e63d-2e95-46a7-ac3a-ed9d81c91c85" />  
   
 ## Installer GIT sur la VM  
